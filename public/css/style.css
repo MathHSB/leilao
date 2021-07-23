@@ -1,0 +1,65 @@
+body {
+  background: #445280;
+}
+.navbar {
+  justify-content: center;
+}
+h1,
+h2,
+h3 {
+  color: #fff;
+}
+h3,
+h2,
+h1 {
+  text-align: center;
+}
+h5 {
+  font-size: 2rem;
+}
+.form-control {
+  max-width: 500px;
+}
+.card-title {
+  text-align: center;
+}
+.form-control.leilao {
+  width: 50%;
+  margin: 0 auto;
+}
+.btn-success {
+  display: block;
+  margin: 0 auto;
+}
+.lista-lances {
+  list-style: none;
+  margin-left: 1rem;
+  font-size: 20px;
+}
+.card-title {
+  font-size: 2.5rem;
+  color: #000;
+}
+.card-title.produto {
+  font-size: 20px;
+}
+
+.container.wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  justify-content: space-around;
+}
+.card {
+  background: #fdd36e;
+}
+
+.valorLance {
+  font-size: 18px;
+  text-align: center;
+}
+@media only screen and (max-width: 750px) {
+  .container.wrap {
+    justify-content: center;
+  }
+}

@@ -1,0 +1,22 @@
+<%- include ("partials/header.ejs");%>
+<body>
+  <%- include ("partials/navbar.ejs");%>
+  <hr>
+  <h1>Seu lance é inferior ao maior valor registrado.</h1>
+  <hr>
+  <div class="container wrap">
+    <div class="card" style="width: 15rem">
+      <div class="card-body">
+        <h5 class="card-title"><%=produto.produto%></h5>
+        <br />
+        <p style="text-align: center"><b>Maiores lances em R$: </b></p>
+        <% ranking.forEach((item)=>{%>
+        <p class="valorLance">
+          <label><%=item.nome%>:</label>
+          <%=item.valorLance%>
+        </p>
+        <%});%>
+        <a href="/" class="btn btn-success">Voltar</a>
+  </div>
+</body>
+<%- include ("partials/footer.ejs"); %>

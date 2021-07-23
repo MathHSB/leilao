@@ -1,0 +1,29 @@
+<%- include ("partials/header.ejs");%>
+<body>
+  <%- include ("partials/navbar.ejs");%>
+  <hr />
+  <h1><%=pessoa.nome%>, dê o seu lance!!</h1>
+  <hr />
+  <br />
+  <div class="container wrap">
+    <% produto.forEach((item)=>{%>
+    <form method="POST" action="/darLance">
+      <div class="card" style="width: 15rem">
+        <div class="card-body">
+          <h5 class="card-title"><%=item.produto%></h5>
+          <br />
+          <p><b>Valor inicial: </b><%= item.valor%></p>
+          <input type="hidden" value="<%= pessoa_id%>" name="pessoa_id" />
+          <input type="hidden" value="<%= item.id%>" name="produto_id" />
+          <input type="hidden" value="<%= valor%>" name="valor" />
+          <input type="text" class="form-control" name="valorLance" /><br />
+          <a href="/listalances">
+            <button class="btn btn-success lance">Dar um lance</button>
+          </a>
+        </div>
+      </div>
+    </form>
+    <%})%>
+  </div>
+</body>
+<%- include ("partials/footer.ejs"); %>

@@ -1,0 +1,23 @@
+<%-include ("partials/header.ejs");%>
+<body>
+  <%- include ("partials/navbar.ejs");%>
+  <div class="container">
+    <hr />
+    <h1>Cadastro dos produtos</h1>
+    <hr />
+    <br />
+    <form method="POST" action="/cadastrarProduto">
+      <h2>Nome do produto</h2>
+      <br />
+      <input type="text" class="form-control leilao" name="produto" /><br />
+      <h2>Preço do produto em R$</h2>
+      <br />
+      <input type="text" class="form-control leilao" name="valor" /><br />
+      <a href="/pessoa">
+        <button class="btn btn-success">Cadastrar</button>
+      </a>
+      <input type="hidden" value="<%=pessoa.id%>" name="pessoa_id" />
+    </form>
+  </div>
+</body>
+<%- include ("partials/footer.ejs"); %>

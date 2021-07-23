@@ -1,0 +1,31 @@
+<%- include ("partials/header.ejs");%>
+<body>
+  <%- include ("partials/navbar.ejs");%>
+
+  <div class="container">
+    <hr />
+    <h1>Lance computado com sucesso!</h1>
+    <hr />
+    <div class="card" style="width: 15rem">
+      <div class="card-body">
+        <h5 class="card-title"><%=produto.produto%></h5>
+        <br />
+        <p style="text-align: center"><b>Maiores lances em R$: </b></p>
+        <!-- <% ranking.forEach((item)=>{%>
+        <p class="valorLance">
+          <label><%=item.nome%>:</label><%=item.valorLance%></p>
+        <%});%> -->
+        <% for(let i = 0; i < ranking.length; i++){%> <%if(ranking[i].nome ===
+        "Lance Inicial"){ continue; }%>
+        <p class="valorLance">
+          <label><%=ranking[i].nome%>: </label><%= ranking[i].valorLance%>
+        </p>
+        <%}%>
+
+        <a href="/">
+          <button class="btn btn-success lance">Pagina principal</button>
+        </a>
+      </div>
+    </div>
+  </div>
+</body>

@@ -1,0 +1,21 @@
+<%-include ("partials/header.ejs");%>
+<body>
+  <%- include ("partials/navbar.ejs");%>
+  <div class="container">
+    <form method="POST" action="/cadastrarPessoa">
+      <hr />
+      <h2>Cadastro para realizar um lance</h2>
+      <hr />
+      <h3>Nome</h3>
+      <br />
+      <input type="text" class="form-control leilao" name="nome" /><br />
+      <h3>Idade</h3>
+      <br />
+      <input type="text" class="form-control leilao" name="idade" /><br />
+      <a href="/produto">
+        <button class="btn btn-success">Cadastrar</button>
+      </a>
+    </form>
+  </div>
+</body>
+<%- include ("partials/footer.ejs"); %>
