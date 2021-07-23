@@ -30,6 +30,10 @@ Teste do processo seletivo para estágio feito pela Graff Tecnologia.
         export DB_SENHA=suaSenha,
         nodemon index.js
 
+Após isso, vá ao navegador e digite:
+
+    localhost:3030
+
 ## NOTAS
 
 A documentação assim como refatoração do código serão feitos aos poucos, o intuito nesse teste foi testar os conhecimentos.
