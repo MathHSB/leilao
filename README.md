@@ -18,7 +18,9 @@ Teste do processo seletivo para estágio feito pela Graff Tecnologia.
 
 ## Instalação:
 
-\*Processo para instalação das dependências do sistema após clone do repositório:
+\*Processo para instalação das dependências do sistema.
+
+    git clone https://github.com/MathHSB/leilao.git
 
     npm install
 
