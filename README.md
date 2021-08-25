@@ -7,6 +7,7 @@ Teste do processo seletivo para estágio feito pela Graff Tecnologia.
 <ul>
 <li>Node JS</li>
 <li>Express JS</li>
+<li>MYSQL</li>
 <li>Sequelize</li>
 <li>EJS</li>
 <li>Bootstrap 5</li>
